@@ -36,7 +36,7 @@ This guide helps you set up **repository mirroring** between **GitLab** and **Gi
 - Click on Create New Repository
 - Create New Repo naming `e.g.,(mirroring github)`
 - Tick public or private to create PUBLIC or PRIVATE Repo
- ![alt text](<Screenshot 2025-07-29 202656.png>)
+ ![alt text](<image/Screenshot 2025-07-29 202656.png>)
 
 ### 🪪 Step 2: Create a GitHub Personal Access Token
 - Go to your GitHub account
@@ -44,16 +44,16 @@ This guide helps you set up **repository mirroring** between **GitLab** and **Gi
 
 → ***Settings***
 
- ![alt text](<Screenshot 2025-07-29 202748.png>)
+ ![alt text](<image/Screenshot 2025-07-29 202748.png>)
 
 → ***Developer***
 
-![alt text](<Screenshot 2025-07-29 202813.png>)
+![alt text](<image/Screenshot 2025-07-29 202813.png>)
 - In Developer Settings 
 - click on ***Personal Access Tokens***
 - In that Click on `Tokens (classic)`
 
-![alt text](<Screenshot 2025-07-29 202839.png>)
+![alt text](<image/Screenshot 2025-07-29 202839.png>)
 
 ***Token (classic):*** Can access all your repositories if you choose `repo` Scope.
 
@@ -61,32 +61,32 @@ This guide helps you set up **repository mirroring** between **GitLab** and **Gi
 
 - Click on **"Tokens (Classic)" → Generate new token**
 
-![alt text](<Screenshot 2025-07-29 202856.png>)
+![alt text](<image/Screenshot 2025-07-29 202856.png>)
 - After clicking on `generate new token`
 - Set expiration if needed
 
-![alt text](<Screenshot 2025-07-29 203052.png>)
+![alt text](<image/Screenshot 2025-07-29 203052.png>)
 - Select the Scopes 
 - Click **Generate Token**
 - ***Copy this token*** immediately — you won’t be able to see it again
 
-![alt text](<Screenshot 2025-07-29 203122.png>)
+![alt text](<image/Screenshot 2025-07-29 203122.png>)
 ### Step 3: Create a GitLab Project
 - Go to GitLab console 
 - Click on `Projects`
 
- ![alt text](<Screenshot 2025-07-29 203301.png>)
+ ![alt text](<image/Screenshot 2025-07-29 203301.png>)
 - In Projects click on `New project`
 - Click on ` Blank project `
 
-![](<Screenshot 2025-07-29 213035.png>)
+![](<image/Screenshot 2025-07-29 213035.png>)
 - Give `project name `
 - In project url, add Group name or namespace
 - In Visibility level, Select Private or Public 
 - In Project Configuration, Tick README to create readme.md file with main
 - Click on `Create Project`
 
-![alt text](<Screenshot 2025-07-29 213246.png>)
+![alt text](<image/Screenshot 2025-07-29 213246.png>)
 
 ### Step 4: Configure Mirroring Repositories
 - Go to your project on **GitLab**
@@ -95,32 +95,32 @@ This guide helps you set up **repository mirroring** between **GitLab** and **Gi
 
 → `Settings`
 
-![alt text](<Screenshot 2025-07-29 213246.png>)
+![alt text](<image/Screenshot 2025-07-29 213246.png>)
 
 → `Repository`
 
-![alt text](<Screenshot 2025-07-29 213317.png>)
+![alt text](<image/Screenshot 2025-07-29 213317.png>)
 
 → `Mirroring Repositories`
 
-![alt text](<Screenshot 2025-07-29 213350.png>)
+![alt text](<image/Screenshot 2025-07-29 213350.png>)
 
 - On that Mirroring Repositories, click on ` Add new `
 - In that add new, it requires ***Git Repository URL***
 - Copy the ***HTTPS GitHub repo URL***
 
-![alt text](<Screenshot 2025-07-29 213440.png>)
+![alt text](<image/Screenshot 2025-07-29 213440.png>)
 - Now paste in Mirroring Repositories, Git Repository URL
 - Kept default `Mirror direction` & `Authentication method`
 
-![alt text](<Screenshot 2025-07-29 213527.png>)
+![alt text](<image/Screenshot 2025-07-29 213527.png>)
 - In `Username`, Add your Github Username
 - In `Password`, Add your ***Access token*** which we copied from Github
 
-![alt text](<Screenshot 2025-07-29 213539.png>)
+![alt text](<image/Screenshot 2025-07-29 213539.png>)
 - And then click on `Mirror Repository` 
 
-![alt text](<Screenshot 2025-07-29 213608.png>)
+![alt text](<image/Screenshot 2025-07-29 213608.png>)
 #### Now your Github Repo and Gitlab project are start Mirroring
 
 ### Step 5: Test Mirror
@@ -131,7 +131,7 @@ This guide helps you set up **repository mirroring** between **GitLab** and **Gi
 ```bash
 git clone <URL>
 ```
-![alt text](<Screenshot 2025-07-29 214016.png>)
+![alt text](<image/Screenshot 2025-07-29 214016.png>)
 - Go to that created folder, use command
 ```bash
 cd <clone project name>/
@@ -149,16 +149,16 @@ git commit -m 'added signup.html file'  #to commit the changes
 ```bash
 git push  # to push the file into gitlab project
 ```
-![alt text](<Screenshot 2025-07-29 214932.png>)
+![alt text](<image/Screenshot 2025-07-29 214932.png>)
 - check your commit appers to Gitlab
 ### Step 6: Check the Mirror test
 
 - Check that file are push to gitlab
 
-![alt text](<Screenshot 2025-07-29 214952.png>)
+![alt text](<image/Screenshot 2025-07-29 214952.png>)
 - And check mirror to Github
 
-![alt text](<Screenshot 2025-07-29 215906.png>)
+![alt text](<image/Screenshot 2025-07-29 215906.png>)
 ## 🚀Successfully done,  GitLab ⇄ GitHub Mirroring
 ## Summary
 - GitLab to GitHub (Push Mirroring):
